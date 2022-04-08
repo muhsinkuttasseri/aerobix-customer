@@ -14,6 +14,58 @@ class Hello extends StatelessWidget {
         child: Column(
           children: [
            
+
+// Row(
+//                 children: [
+                  
+//                   Column(children: const [
+
+                    
+//                     Padding(
+//                 padding: EdgeInsets.only(
+//                    right: 170,
+//                    top: 30,
+//                  ),
+//                  child: CircleAvatar(radius:35,backgroundImage: NetworkImage('https://cdn.pixabay.com/photo/2017/09/27/15/52/man-2792456_1280.jpg',
+//                 ),
+//                  ),
+//                ),
+//                      Padding(
+//                                   padding: EdgeInsets.only(
+//                                     left: 150,
+//                                     right: 50,
+//                                     top:30
+//                                   ),
+//                                   child: SizedBox(
+//                                     // width: 300,
+//                                     child: Text('Hello Lenni ',
+//                                     style:TextStyle(
+//                                       fontWeight: FontWeight.w900,
+//                                       fontSize: 20,
+//                                     )
+//                                     ),
+//                                   ),
+//                                 ),
+//                                 Padding(
+//                                   padding: EdgeInsets.only(
+//                                     // bottom: 100,
+//                                     left:100,
+//                                     top:5
+//                                   ),
+//                                   child: Text('Good  Morning!',
+//                                   style:TextStyle(
+//                                     color: Colors.grey
+
+//                                   )),
+//                                 )
+//                   ],)
+//                 ],
+//               ),
+
+
+
+
+
             Row(
               children: const [
                 
@@ -26,12 +78,7 @@ class Hello extends StatelessWidget {
                 ),
                 ),
               ),
-              //  Text("Hello Lenni", style: TextStyle(
-              //          fontSize: 30,
-              //   fontWeight: FontWeight.bold,
-              //       ),
-              //         ),
-              //    Text('GoodMorning'),
+              
                 Padding(
                   padding: EdgeInsets.only(
                     left: 25,
@@ -47,14 +94,18 @@ class Hello extends StatelessWidget {
                       
                 ),
                
+               
                 Padding(
-                  padding: EdgeInsets.only(
-                    left: 110,
+                      padding: EdgeInsets.only(
+                         left: 110,
                     top: 5,
+                      ),
+                    child: Icon(MdiIcons.bell ,
+                  color: Colors.black,
+                  size: 25,
+                  // color: Colors.black,
                   ),
-                  child: Icon(Icons.notifications),
-                ),
-                
+                    ),
                 
                 
               ],
@@ -85,10 +136,9 @@ class Hello extends StatelessWidget {
                               color: Colors.black,
                               borderRadius: BorderRadius.circular(10),
                               image: const DecorationImage(
-                                image: AssetImage(
-                                  'assets/images/tab 1.jpg',
+                                image: NetworkImage(
+                                  'https://cdn.pixabay.com/photo/2017/09/27/15/52/man-2792456_1280.jpg',
                                 ),
-                                //  Text('bbfb afuj ghfujgsku s'),
                                 fit: BoxFit.cover,
                               ),
       
